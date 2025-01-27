@@ -1,0 +1,22 @@
+# Base dependencies
+requests==2.31.0
+rich==13.7.0
+python-dotenv==1.0.1
+openai>=1.52.0
+
+# vLLM and its dependencies
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+vllm>=0.6.0
+ninja>=1.11.1
+cmake>=3.26.0
+
+# Common dependencies
+packaging>=24.0
+setuptools>=61.0.0
+typing-extensions>=4.8.0
+
+# Note: Ollama doesn't require additional Python packages as it runs as a separate service
+# OpenRouter uses the base 'requests' package which is already included above
